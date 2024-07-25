@@ -1,0 +1,88 @@
+:root {
+  /**COLORS*/
+  --anti-flash-white: #F3F3F3;
+  --black: #000000;
+  --charleston-green-v1: #2D2D2D;
+  --charleston-green-v2: #2B2B2B;
+  --paolo-veronese-green: #009379;
+  --piggy-pink: #F6DCE9;
+  --pink-lace: #F9E6F0;
+  --white: #ffffff;
+  /**/
+  --color-menu-link: var(--charleston-green-v1)
+}
+*{
+    /* border: 1px dotted blue; */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Epilogue", sans-serif;
+  }
+  p {
+    line-height: 1.4;
+    font-size: 17px;
+}
+  /** Header */
+ 
+.menu-item a {
+  text-decoration: none;
+  color: var(--color-menu-link);
+}
+.menu-item a:hover {
+  color: grey;
+}
+
+  .container {
+    width: 90%;
+    margin: 0 auto;
+}
+.logo-navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 26px auto;
+}
+.logo{
+    font-size: 20 px;
+    font-weight: 600;
+}
+.navbar {
+    display: none;
+}
+ul.main-menu {
+  display: flex;
+  gap: .5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+@media (min-width: 768px){
+    .hamburger-icon {
+        display: none;
+    }
+    .navbar{
+        display: block;
+    }
+}
+
+/**Main: Section Bio*/
+.bio{
+  background-color: var(--pink-lace);
+}
+
+@media(min-width: 768px){
+  .bio-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    width: 60%;
+    padding: 7rem 0;
+}
+}
+
