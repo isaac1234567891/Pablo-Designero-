@@ -90,8 +90,15 @@ ul.main-menu {
   font-size: 17px;
   margin: 1.2rem 0;
 }
+span.name-designer {
+  display: block;
+  text-decoration: underline;
+}
 .profession {
   font-weight: normal;
+}
+span.profession {
+  display: block;
 }
 .biography {
   margin-top: 6rem;
@@ -109,10 +116,45 @@ ul.main-menu {
   .biography {
       margin-top: initial;
   }
+  .description-content {
+    width: 70%;
+  }
 }
 
 /** Main: Section Story */
+.description-content {
+  padding: 5rem 0;
+}
+.description-content *:first-child {
+  margin-bottom: 2.5rem;
+  font-weight: normal;
+  line-height: 1.7;
+}
+.description-content p {
+  line-height: 1.7;
+}
 
+/** Inicio: Forma 1*/
+/* .description-content *:nth-child( even ) {
+  background: #009379;
+}
+.description-content *:last-child {
+  background: #FFFFFF;
+} */
+/** Fin: Forma 1 */
+/** Inicio: Forma 2 */
+/* .description-content *:nth-child(2),
+.description-content *:nth-child(4) {
+  background: blue;
+} */
+
+/* Selecciona cada elemento hijo par excepto el último */
+.description-content *:nth-child(2n):not(:nth-last-child(1)) {
+  background-color: var(--paolo-veronese-green); /* Cambia esto al color de fondo que prefieras */
+  color: var(--piggy-pink);
+  font-weight: 600;
+}
+/** Fin: Forma 2 */
 
 /** Footer */
 .footer-content {
@@ -175,3 +217,4 @@ textarea.form-input {
   height: calc( var( --height-input ) * 3 );
   resize: none;
 }
+
