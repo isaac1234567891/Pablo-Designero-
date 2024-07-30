@@ -8,6 +8,7 @@
   --piggy-pink: #F6DCE9;
   --pink-lace: #F9E6F0;
   --white: #ffffff;
+  --height-input: 69px;
   /**/
   --color-menu-link: var(--charleston-green-v1)
 }
@@ -59,6 +60,30 @@ ul.main-menu {
   padding: 0;
   margin: 0;
 }
+/**historia*/
+.container.description-content {
+  display: block;
+  padding: 139px;
+}
+p.parrafo1 {
+  padding: 30px 0;
+}
+p.parrafo2 {
+  background-color: var(--paolo-veronese-green);
+  color: var(--white);
+  padding: 4px 0;
+}
+p.parrafo3 {
+  padding: 4px 0;
+}
+p.parrafo4 {
+  background-color: var(--paolo-veronese-green);
+  color: var(--white);
+  padding: 4px 0;
+}
+p.parrafo5 {
+  padding: 4px 0;
+}
 
 
 @media (min-width: 768px){
@@ -87,7 +112,7 @@ ul.main-menu {
 }
 
 /** footer*/
-footer.footer {
+/* footer.footer {
   padding: 30px;
 }
 .footer-content {
@@ -130,4 +155,68 @@ input[type="submit"] {
 }
 .info {
   flex-basis: 50%;
+} */
+/** Footer */
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  border-top: 3px solid var(--anti-flash-white);
+  padding: 3rem 0;
 }
+@media ( min-width: 768px) {
+  .footer-content {
+    flex-direction: row;
+  }
+}
+
+.lets-work {
+  flex-basis: 30%;
+}
+h2 {
+  padding: 30px 0;
+}
+ul.social-media {
+  list-style: none;
+  display: flex;
+  margin-top: 2.4rem;
+  gap: .5rem;
+  justify-content: left;
+}
+.contact {
+  flex-basis: 50%;
+}
+.form-input {
+  outline: none;
+  width: 100%;
+  height: var(--height-input);
+  padding: 25px;
+  margin-bottom: 1rem;
+  background-color: var(--anti-flash-white);
+  border: none;
+}
+.btn {
+  width: 235px;
+  display: inline-block;
+  padding: 25px 85px;
+  border: 1px solid transparent;
+}
+.btn--bg-black {
+  background-color: var(--black);
+  color: var(--white);
+  font-weight: bold;
+}
+
+textarea.form-input {
+  height: calc(var(--height-input) * 3);
+  resize: none;
+}
+.field {
+  margin: 20px;
+}
+/* button {
+  padding: 10px 50px;
+  text-align: center;
+  background-color: var(--charleston-green-v1);
+  color: var(--white);
+} */
