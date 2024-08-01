@@ -1,0 +1,36 @@
+/** Main: Section Story */
+
+.description-content {
+    padding: 5rem 0;
+  }
+  
+  .description-content *:first-child {
+    margin-bottom: 2.5rem;
+    font-weight: normal;
+    line-height: 1.7;
+  }
+  .description-content p {
+    line-height: 1.7;
+  }
+  
+  /** Inicio: Forma 1*/
+  /* .description-content *:nth-child( even ) {
+    background: #009379;
+  }
+  .description-content *:last-child {
+    background: #FFFFFF;
+  } */
+  /** Fin: Forma 1 */
+  /** Inicio: Forma 2 */
+  /* .description-content *:nth-child(2),
+  .description-content *:nth-child(4) {
+    background: blue;
+  } */
+  
+  /* Selecciona cada elemento hijo par excepto el último */
+  .description-content *:nth-child(2n):not(:nth-last-child(1)) {
+    background-color: var(--paolo-veronese-green); /* Cambia esto al color de fondo que prefieras */
+    color: var(--piggy-pink);
+    font-weight: 600;
+  }
+  /** Fin: Forma 2 */
